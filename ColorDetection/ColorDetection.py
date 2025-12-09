@@ -11,7 +11,7 @@ while True:
 
     hsvImage = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    lowerLimit, upperLimit = get_limits(color=yellow)
+    lowerLimit, upperLimit = get_limits(color=Green)
 
     mask = cv2.inRange(hsvImage, lowerLimit, upperLimit)
 
